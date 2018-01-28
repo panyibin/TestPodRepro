@@ -7,6 +7,9 @@
 //
 
 #import "YBViewController.h"
+//#import <test>
+//#import <TestPod/>
+#import <TestPod/TestLabel.h>
 
 @interface YBViewController ()
 
@@ -18,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    TestLabel *label = [[TestLabel alloc] initWithFrame:CGRectMake(0, 0, 200, 50)];
+    [self.view addSubview:label];
+    
 }
 
 - (void)didReceiveMemoryWarning
